@@ -1,0 +1,25 @@
+//abstract or Super-Class declaration for the recordings 
+
+public abstract class Holding{
+      private String title;
+      public Holding(String inTitle){     //Constructor for the class holding
+      Title=inTitle;
+      }
+      public String getTitle(){return Tite;} // public methode for Holding 
+}
+
+
+
+//  sub-class Book
+
+
+public class book extend Holding{
+      private String Author;
+      public Book(String inAuthor, String inTitle){
+      super(inTitle);  // get propriety Title from Parent class
+      Author= inAuthor;
+      }
+      public String getAuthor(){return Author;}
+}
+
+
