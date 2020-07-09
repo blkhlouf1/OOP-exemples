@@ -1,0 +1,12 @@
+//this is the first class in the Tutorial
+//the Program can be tested here https://www.tutorialspoint.com/compile_java_online.php on 09/07/2020
+
+public class Myfirstjavaprogram{
+
+//this is the main methode
+
+    public static void main(String []args){
+    System.out.println("Hello world");
+    }
+
+}
