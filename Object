@@ -1,0 +1,19 @@
+//object creation
+
+public class Puppy{
+    
+    public Puppy(String name){
+        
+     System.out.println("Puppy name is  " + name);
+    }
+    
+    
+    public static void main(String []args){
+    
+    
+    // object call
+     Puppy Adam= new Puppy("Adam");
+    }
+    
+
+}
