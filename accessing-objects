@@ -1,0 +1,31 @@
+// accessing Instance variables and methodes 
+
+
+public class Cat{
+    int catAge;
+    String catName;
+    public Cat(String name){
+        
+        System.out.println("Cats Name is "+ name);
+        catName=name;
+    }
+    
+    
+    public void setAge(int age){
+        
+        catAge=age;
+    }
+    
+    public int getAge(){
+        
+        System.out.println("Cat Age is " + catAge);
+        return catAge;
+    }
+    
+    public static void main(String []args){
+        
+        Cat lulu=new Cat("Lulu");
+        lulu.setAge(2);
+        lulu.getAge();
+        System.out.println( "Cats name is "+lulu.catName+ " and cats Age is  " +lulu.catAge );
+    }
