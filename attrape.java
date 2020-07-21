@@ -11,25 +11,29 @@ package com.mycompany.exceptionse;
  */
 public class attrape{
     public static int moyenne(String[] liste){
-        int somme=0,nbEntiers=0;
-        
+        int somme=0,nbEntiers=0,m=0;
         for (String chaine:liste){
-            
             try{
                 somme+=Integer.parseInt(chaine);
-                
                 nbEntiers++;
                 
             }
                 catch (NumberFormatException e){
                     
-                    System.out.println(chaine+ "non Entier");
+                    System.out.println(chaine+ " non Entier");
                 }
+            
+          
+            }
+            try{
+                m=somme/nbEntiers;
                 
             }
-            
-            
-            return somme/nbEntiers;
+                catch (ArithmeticException e){
+                    
+                    System.out.println(" non Entier");
+                }
+            return m;
             
         }
         
